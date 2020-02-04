@@ -1,0 +1,21 @@
+// Colors
+$color-primary: #000563;
+
+$color-accent-1: #33C1D3;
+$color-accent-2: #EE5965;
+$color-accent-3: #5ABF8F;
+$color-accent-4: #20C6D7;
+$color-accent-5: #57BE8E;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+
+// Typography
+@font-face {
+    font-family: "Roobert";
+    font-weight: 500;
+    src: url("../fonts/RoobertMedium.ttf");
+}
+
+$font-main: "Roobert", "Helvetica", "Arial", sans-serif;

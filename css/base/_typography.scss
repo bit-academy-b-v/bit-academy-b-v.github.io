@@ -1,0 +1,88 @@
+.h1 {
+    font-family: $font-main;
+    font-size: 5rem;
+    line-height: 1.033;
+    font-weight: 500;
+    color: $color-white;
+    @include atMedium {
+        font-size: 6.5rem;
+    }
+    @include atLarge {
+        font-size: 7.5rem;
+    }
+}
+
+.h2 {
+    font-family: $font-main;
+    font-size: 3rem;
+    line-height: 1.033;
+    font-weight: 500;
+    color: $color-white;
+    @include atMedium {
+        font-size: 3.5rem;
+    }
+    @include atLarge {
+        font-size: 3.75rem;
+    }
+
+    &--lg {
+        font-size: 2.5rem;
+    }
+
+    &--xl {
+        font-size: 5rem;
+    }
+}
+
+.h3 {
+    font-family: $font-main;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.267;
+    color: $color-white;
+    @include atMedium {
+        font-size: 1.875rem;
+    }
+
+    &--md {
+        font-size: 2.333rem;
+        @include atMedium {
+            font-size: 1.75rem;
+        }
+    }
+}
+
+.h4  {
+    font-family: $font-main;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.083;
+    color: $color-white;
+    @include atMedium {
+        font-size: 1.75rem;
+    }
+}
+
+.p {
+    font-family: $font-main;
+    font-size: 1.333rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $color-white;
+    @include atMedium {
+        font-size: 1rem;
+    }
+
+    &--lg {
+        @include atMedium {
+            font-size: 1.125rem;
+        }
+    }
+
+    &--xl {
+        font-size: 1.667rem;
+        @include atMedium {
+            font-size: 1.25rem;
+        }
+    }
+}

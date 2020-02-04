@@ -1,0 +1,54 @@
+.manifest {
+    &__item {
+        &-media {
+            @include atMedium {
+                height: 6.625rem;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+            }
+        }
+
+        & + & {
+            margin-top: 4rem;
+            @include atMedium {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__img {
+        position: relative;
+        margin: 6.875rem auto 10.625rem auto;
+
+        &-dots {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 110%;
+            max-width: none;
+            transform: translate(-50%, 50%);
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: .5rem;
+                left: 33%;
+                height: 4px;
+                width: 4px;
+                background-color: $color-accent-4;
+                transform-origin: 100% 50%;
+                transform: scaleX(500);
+                @include atMedium {
+                    bottom: .75rem;
+                }
+            }
+
+            img {
+                width: 100%;
+                pointer-events: none;
+                user-select: none;
+            }
+        }
+    }
+}

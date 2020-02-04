@@ -1,0 +1,43 @@
+.footer {
+    padding: 4.6875rem 0;
+    background-color: rgba($color-white, .2);
+
+    &__inner {
+        @include atMedium {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        width: 17.167rem;
+        @include atMedium {
+            width: 12.875rem;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+        @include atMedium {
+            justify-content: flex-end;
+            margin-top: 0;
+        }
+
+        &-group {
+            width: 50%;
+            @include atMedium {
+                width: auto;
+            }
+
+            & + & {
+                @include atMedium {
+                    margin-left: 4.375rem;
+                }
+            }
+        }
+    }
+}

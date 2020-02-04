@@ -1,0 +1,270 @@
+.header {
+    padding: 2.5rem 0;
+    position: relative;
+    z-index: 4;
+    @include atMedium {
+        padding: 3.4375rem 0;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        @include atMedium {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__logo {
+        display: block;
+        width: 15rem;
+        @include atMedium {
+            width: 11.25rem;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        width: 2rem;
+        height: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        @include atMedium {
+            display: none;
+        }
+
+        &-line {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $color-white;
+            transition: all .25s;
+            backface-visibility: hidden;
+
+            &:first-child {
+                top: 0;
+            }
+
+            &:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:last-child {
+                bottom: 0;
+            }
+        }
+
+        &:hover {
+            .header__btn-line {
+                background-color: $color-accent-1;
+            }
+        }
+    }
+
+    &__nav {
+        flex: 1;
+        transition: all .25s;
+        backface-visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        max-width: 27rem;
+        height: 100vh;
+        transform: translateX(100%);
+        pointer-events: none;
+        overflow: auto;
+        background-color: $color-white;
+        padding: 6rem 4rem 3rem 4rem;
+        border-top-left-radius: .75rem;
+        border-bottom-left-radius: .75rem;
+        box-shadow: 0 0 1rem rgba($color-black, .5);
+        @include atMedium {
+            overflow: initial;
+            position: static;
+            transform: none;
+            background: none;
+            padding: 0;
+            border-radius: 0;
+            opacity: 1;
+            pointer-events: all;
+            background-color: transparent;
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+            box-shadow: none;
+            display: block !important;
+        }
+
+        .header__btn {
+            position: absolute;
+            top: 3rem;
+            right: 4rem;
+
+            &-line {
+                background-color: $color-primary;
+            }
+        }
+
+        & > ul {
+            @include atMedium {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+            & > li {
+                position: relative;
+                color: $color-primary;
+                font-size: 2rem;
+                @extend .p--lg;
+                @include atMedium {
+                    color: $color-white;
+                    font-size: 1.125rem;
+                }
+
+                span {
+                    cursor: pointer;
+                    transition: all .25s;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        width: 150%;
+                        height: 150%;
+                        transform: translate(-50%, 50%);
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+
+                    i {
+                        margin-left: .667rem;
+                        transform: translateY(2px);
+                        width: 1rem;
+                        @include atMedium {
+                            margin-left: .5rem;
+                            width: .75rem;
+                        }
+                    }
+
+                    &:hover {
+                        color: $color-accent-1;
+                    }
+                }
+
+                & + li {
+                    margin-top: 2rem;
+                    @include atMedium {
+                        margin-top: 0;
+                        margin-left: 2.1875rem;
+                    }
+                }
+
+                & > ul {
+                    border-bottom-left-radius: .5rem;
+                    border-bottom-right-radius: .5rem;
+                    background-color: $color-white;
+                    padding-top: 1rem;
+                    display: none;
+                    @include atMedium {
+                        padding: .9375rem;
+                        border-radius: .375rem;
+                        position: absolute;
+                        left: 0;
+                        bottom: -.75rem;
+                        transform: translateY(100%);
+                        display: block !important;
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: all .25s;
+                        backface-visibility: hidden;
+                    }
+
+                    & > li {
+                        color: $color-primary;
+                        font-size: 1.5rem;
+                        @extend .p--lg;
+                        @include atMedium {
+                            font-size: 1.125rem;
+                        }
+
+                        a {
+                            display: block;
+                            padding: .833rem 1.667rem .833rem 0;
+                            @include atMedium {
+                                padding: .625rem 1.25rem .625rem 0;
+                            }
+                        }
+
+                        & + li {
+                            border-top: 1px solid rgba($color-primary, .1);
+                        }
+
+                        &:first-child {
+                            a {
+                                padding-top: 0;
+                            }
+                        }
+                        
+                        &:last-child {
+                            a {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    span {
+                        &:after {
+                            opacity: 1;
+                            pointer-events: all;
+                        }
+                    }
+
+                    & > ul {
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+                }
+            }
+        }
+    }
+
+    &.is-open {
+        .header {
+            &__nav {
+                pointer-events: all;
+                transform: none;
+            }
+
+            &__btn-line {
+                &:first-child {
+                    top: 50%;
+                    transform: translateY(-50%) rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    bottom: 50%;
+                    transform: translateY(50%) rotate(-45deg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.tag {
+    padding: .667rem 1.167rem;
+    border-radius: .5rem;
+    background-color: rgba($color-white, .2);
+    line-height: 1;
+    text-align: center;
+    @extend .p;
+    @include atMedium {
+        padding: .5rem .875rem;
+        border-radius: .375rem;
+    }
+}

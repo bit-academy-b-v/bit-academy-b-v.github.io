@@ -1,0 +1,31 @@
+.events {
+    &__list {
+        margin-bottom: -4.375rem;
+    }
+
+    &__item {
+        margin-bottom: 4.375rem;
+
+        &-img {
+            width: 100%;
+            margin-bottom: 1.667rem;
+            @include atMedium {
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        &-info {
+            margin: 1.167rem 0 .9167rem 0;
+            @include atMedium {
+                margin: .875rem 0 .6875rem 0;
+            }
+        }
+
+        &-btn {
+            margin-top: 1.667rem;
+            @include atMedium {
+                margin-top: 1.25rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// Word break
+.u-hyphens {
+    hyphens: auto;
+}
+
+
+// Width
+.w {
+    &-md {
+        @include atMedium {
+            &-100 {
+                width: 100%;
+            }
+        }
+    }
+}
