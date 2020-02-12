@@ -14,3 +14,32 @@
     width: 100%;
     height: 100%;
 }
+
+.header__nav > ul > li > ul > li a {
+    white-space: pre;
+}
+
+.tech-talk-btn {
+    width: 300px;
+    margin: 20px 0;
+}
+
+.accordion .card {
+    background: none;
+    color: white;
+}
+
+.accordion h2 {
+    font-size: initial;
+}
+
+.accordion .card-header {
+    background: none;
+    border: 1px solid white;
+}
+
+.accordion button {
+    background: none;
+    color: white;
+    font-size: 20px;
+}
