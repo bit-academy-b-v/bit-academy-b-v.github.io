@@ -43,3 +43,18 @@
     color: white;
     font-size: 20px;
 }
+
+.events__item.past {
+    opacity: 0.5;
+    position: relative;
+}
+
+.events__item.past .finished{
+    position: absolute;
+    font-size: 36px;
+    color: black;
+    background: white;
+    padding: 10px;
+    top: 110px;
+    left: 30%;
+}
