@@ -1,9 +1,7 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
-
 @import "base/base";
 @import "base/typography";
-
 @import "components/events";
 @import "components/btn";
 @import "components/tag";
@@ -12,9 +10,10 @@
 @import "components/manifest";
 @import "components/testimonial";
 @import "components/method";
-
+@import "components/embed-container";
+@import "components/tech-talks";
+@import "components/looking-for-bit";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
-
 @import "base/utilities";

@@ -1,0 +1,26 @@
+.tech-talks {
+  .accordion .card {
+    background: none;
+    color: white;
+  }
+
+  .accordion h2 {
+    font-size: initial;
+  }
+
+  .accordion .card-header {
+    background: none;
+    border: 1px solid white;
+  }
+
+  .accordion button {
+    background: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .tech-talk-btn {
+    width: 300px;
+    margin: 20px 0;
+  }
+}

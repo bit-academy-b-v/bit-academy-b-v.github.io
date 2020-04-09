@@ -27,5 +27,20 @@
                 margin-top: 1.25rem;
             }
         }
+
+        &.past {
+            opacity: 0.5;
+            position: relative;
+        }
+
+        &.past .finished {
+            position: absolute;
+            font-size: 36px;
+            color: black;
+            background: white;
+            padding: 10px;
+            top: 110px;
+            left: 30%;
+        }
     }
 }
