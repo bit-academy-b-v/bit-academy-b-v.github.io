@@ -1,14 +1,14 @@
 .h1 {
     font-family: $font-main;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.033;
     font-weight: 500;
     color: $color-white;
     @include atMedium {
-        font-size: 6.5rem;
+        font-size: 4.5rem;
     }
     @include atLarge {
-        font-size: 7.5rem;
+        font-size: 5.5rem;
     }
 }
 

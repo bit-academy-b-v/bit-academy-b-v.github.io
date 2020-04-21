@@ -1,0 +1,57 @@
+.index {
+  .want-to-be {
+    @include atMedium {
+      background-size: 50% auto;
+      background-image: url('/images/2596842.svg');
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+  }
+
+  .txt-rotate {
+    white-space: nowrap;
+  }
+
+  .paths-container {
+    img {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  .paths {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+
+    a {
+      display: block;
+      margin: 10px 0;
+      border-radius: 5px;
+      padding: 20px 10px;
+      width: 100%;
+      border: 2px solid lightgray;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+    }
+
+    a.active, a:hover {
+      &.blue {
+        border-color: $color-accent-4;
+        color: $color-accent-4;
+      }
+
+      &.dark-blue {
+        border-color: $color-primary;
+       color: $color-primary;
+      }
+
+      &.red {
+        border-color: $color-accent-2;
+        color: $color-accent-2;
+      }
+    }
+  }
+}

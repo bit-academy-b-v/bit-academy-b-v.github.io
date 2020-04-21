@@ -1,13 +1,15 @@
-@media screen and (max-width: 768px) {
-  .looking-for-bit {
-    display: none;
-  }
-}
-
 .looking-for-bit {
   position: absolute;
   top: 0;
   right: 0;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 980px) {
+    transform: scale(0.6) translateX(35px) translateY(-22px);
+  }
 
   p {
     font-size: 14px;

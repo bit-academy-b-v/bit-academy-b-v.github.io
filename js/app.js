@@ -24,7 +24,7 @@ $(document).ready(function () {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
-        this.period = 500;
+        this.period = 300;
         this.txt = '';
         this.tick();
         this.isDeleting = false;
@@ -53,7 +53,7 @@ $(document).ready(function () {
         } else if (this.isDeleting && this.txt === '') {
             this.isDeleting = false;
             this.loopNum++;
-            delta = 500;
+            delta = 200;
         }
 
         setTimeout(function() {

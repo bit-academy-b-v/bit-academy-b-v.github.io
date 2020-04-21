@@ -50,29 +50,6 @@
                     }
                 }
 
-                &:before {
-                    top: 33.5%;
-                    right: auto;
-                    left: .3125rem;
-                    transform: translateX(-100%);
-                    background-color: $color-accent-1;
-                    @include atSmall {
-                        top: 13.5rem;
-                    }
-                    @include atMedium {
-                        top: 17.25rem;
-                    }
-                    @include atLarge {
-                        top: 18.5rem;
-                    }
-                    @include atExtralarge {
-                        top: 22rem;
-                    }
-                    @include atHuge {
-                        top: 19.3rem;
-                    }
-                }
-
                 img {
                     width: 100%;
                 }
