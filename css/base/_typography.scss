@@ -69,9 +69,6 @@
     font-weight: 500;
     line-height: 1.5;
     color: $color-white;
-    @include atMedium {
-        font-size: 1rem;
-    }
 
     &--lg {
         @include atMedium {

@@ -1,54 +1,35 @@
 .btn {
-    padding: 1rem 5rem;
-    min-height: 4.167rem;
-    border-radius: 10rem;
-    line-height: 1;
-    color: $color-white;
+  padding: 1rem 5rem;
+  min-height: 4.167rem;
+  border-radius: 10rem;
+  line-height: 1;
+  color: $color-white;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-accent-4;
+
+  @extend .p;
+  @extend .p--xl;
+  @include linkStates($color-white, none);
+  @include atMedium {
+    padding: .75rem 3.75rem;
+    min-height: 3.125rem;
+    font-size: 1.25rem;
+  }
+
+  span {
     position: relative;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    @extend .p;
-    @extend .p--xl;
-    @include linkStates($color-white, none);
-    @include atMedium {
-        padding: .75rem 3.75rem;
-        min-height: 3.125rem;
-        font-size: 1.25rem;
-    }
+    z-index: 3;
+  }
 
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transition: all .25s;
-        backface-visibility: hidden;
-    }
+  &.green {
+    background: $color-accent-5;
+  }
 
-    &:before {
-        z-index: 1;
-        background-image: linear-gradient(to right, $color-accent-4, $color-accent-5);
-    }
-
-    &:after {
-        z-index: 2;
-        opacity: 0;
-        background-image: linear-gradient(to right, darken($color-accent-4, 10%), darken($color-accent-5, 10%));
-    }
-
-    span {
-        position: relative;
-        z-index: 3;
-    }
-
-    &:hover {
-        &:after {
-            opacity: 1;
-        }
-    }
+  &:hover {
+    opacity: 0.9;
+  }
 }
