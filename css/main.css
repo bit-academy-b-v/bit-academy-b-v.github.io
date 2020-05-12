@@ -5,7 +5,7 @@
   src: url("../fonts/RoobertMedium.ttf");
 }
 .blue {
-  color: #33C1D3;
+  color: #33c1d3;
 }
 
 html,
@@ -74,7 +74,7 @@ a:link, a:hover, a:active, a:focus, a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: #33C1D3;
+  color: #33c1d3;
 }
 
 img {
@@ -103,7 +103,7 @@ textarea:focus {
 
 ::selection {
   color: #ffffff;
-  background-color: #33C1D3;
+  background-color: #33c1d3;
 }
 
 .curl:after {
@@ -633,7 +633,7 @@ li {
   text-align: right;
 }
 .looking-for-bit img {
-  height: 45px;
+  height: 40px;
 }
 
 .curl {
@@ -755,7 +755,7 @@ li {
   bottom: 0;
 }
 .header__btn:hover .header__btn-line {
-  background-color: #33C1D3;
+  background-color: #33c1d3;
 }
 .header__nav {
   flex: 1;
@@ -851,7 +851,7 @@ li {
   }
 }
 .header__nav > ul > li span:hover {
-  color: #33C1D3;
+  color: #33c1d3;
 }
 .header__nav > ul > li + li {
   margin-top: 2rem;
