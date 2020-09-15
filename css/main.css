@@ -136,6 +136,10 @@ textarea:focus {
   .h1, h1 {
     font-size: 5.5rem;
   }
+
+  .h1.smaller, h1.smaller {
+    font-size: 4.5rem;
+  }
 }
 
 .h2, h2 {
@@ -1005,5 +1009,8 @@ li {
   flex-direction: column;
   justify-content: center;
 }
-
+.subtext {
+  color: white;
+  font-size: 16px;
+}
 /*# sourceMappingURL=main.css.map */
