@@ -136,10 +136,6 @@ textarea:focus {
   .h1, h1 {
     font-size: 5.5rem;
   }
-
-  .h1.smaller, h1.smaller {
-    font-size: 4.5rem;
-  }
 }
 
 .h2, h2 {
@@ -619,6 +615,7 @@ li {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 9999;
 }
 @media screen and (max-width: 768px) {
   .looking-for-bit {
@@ -668,8 +665,6 @@ li {
   justify-content: center;
   height: 25px;
   width: 25px;
-  min-height: 25px;
-  min-width: 25px;
   border-radius: 25px;
   background: #EE5965;
   font-size: 1rem;
@@ -833,9 +828,6 @@ li {
   align-items: center;
   justify-content: center;
   position: relative;
-}
-.header__nav > ul > li a {
-  white-space: nowrap;
 }
 .header__nav > ul > li span:after {
   content: "";
@@ -1009,8 +1001,5 @@ li {
   flex-direction: column;
   justify-content: center;
 }
-.subtext {
-  color: white;
-  font-size: 16px;
-}
+
 /*# sourceMappingURL=main.css.map */
