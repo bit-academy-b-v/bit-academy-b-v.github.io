@@ -670,9 +670,12 @@ li {
   font-size: 1rem;
 }
 
-p.card-text {
-  color: black;
-  font-size: 14px;
+.card {
+  background: none;
+  border: 1px solid white;
+}
+.card .card-title {
+  color: white;
 }
 
 .container,

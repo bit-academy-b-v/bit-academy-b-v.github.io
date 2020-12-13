@@ -25,7 +25,11 @@
   }
 }
 
-p.card-text {
-  color: black;
-  font-size: 14px;
+.card {
+  background: none;
+  border: 1px solid white;
+  
+  .card-title {
+    color: white;
+  }
 }
