@@ -670,6 +670,11 @@ li {
   font-size: 1rem;
 }
 
+p.card-text {
+  color: black;
+  font-size: 14px;
+}
+
 .container,
 .container-fluid {
   padding-left: 30px;
