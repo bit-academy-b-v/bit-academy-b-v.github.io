@@ -1,7 +1,7 @@
 .header {
     padding: 2.5rem 0;
     position: relative;
-    z-index: 4;
+    z-index: 3;
     @include atMedium {
         padding: 3.4375rem 0;
     }
@@ -218,7 +218,7 @@
                                 padding-top: 0;
                             }
                         }
-                        
+
                         &:last-child {
                             a {
                                 padding-bottom: 0;
