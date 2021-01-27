@@ -106,20 +106,6 @@ textarea:focus {
   background-color: #33c1d3;
 }
 
-.curl:after {
-  left: auto;
-  right: 5.8%;
-  bottom: auto;
-  top: 14.16%;
-  transform: skew(-15deg) rotate(-84deg);
-}
-
-.curl:hover {
-  width: 120px;
-  height: 120px;
-  cursor: pointer;
-}
-
 .h1, h1 {
   font-family: "Roobert", "Helvetica", "Arial", sans-serif;
   font-size: 4rem;
@@ -646,7 +632,6 @@ li {
   right: 0;
   background: linear-gradient(225deg, #fcb1ca, #fcb1ca 45%, #fcb1ca 50%, #aaa 50%, #bbb 56%, #ccc 62%, #f3f3f3 80%, #fff 100%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s ease;
   z-index: 10;
 }
 

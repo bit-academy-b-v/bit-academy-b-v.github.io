@@ -98,17 +98,3 @@ textarea {
     color: $color-white;
     background-color: $color-accent-1;
 }
-
-.curl:after {
-    left: auto;
-    right: 5.8%;
-    bottom: auto;
-    top: 14.16%;
-    transform: skew(-15deg) rotate(-84deg);
-}
-
-.curl:hover {
-    width: 120px;
-    height: 120px;
-    cursor: pointer;
-}
