@@ -46,13 +46,23 @@
     </script>
     <!-- Facebook Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
             'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '832476150940389');
         fbq('track', 'PageView');
@@ -377,7 +387,9 @@
                             kan je bij de Bit Academy terecht komen. Je betaalt dus gewoon regulier schoolgeld. Aan de
                             Bit
                             Academy zitten geen extra kosten verbonden. <br/><br/>
-                            Na 3 jaar krijg je van deze colleges je diploma. Het MBO college waar je ingeschreven staat rijkt het diploma na afronding van de opleiding uit. Vanuit de Bit Academy krijg je een extra
+                            Na 3 jaar krijg je van deze colleges je diploma. Het MBO college waar je ingeschreven staat
+                            rijkt het diploma na afronding van de opleiding uit. Vanuit de Bit Academy krijg je een
+                            extra
                             certificaat waarmee je aan je toekomstige werkgever kan laten zien dat je extra goed bent.
                         </p>
                     </div>
@@ -488,6 +500,13 @@
             height=“0" width=“0” style=“display:none;visibility:hidden”></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<button type="button" class="btn btn-primary kennismaking-btn" data-toggle="modal"
+        onclick="Calendly.showPopupWidget('https://calendly.com/joris-bit-academy/bit-academy-online-informatiebijeenkomst');return false;">
+    <span>Plan een kennismaking</span> <i class="fas fa-calendar-alt"></i>
+</button>
+
 </body>
 
 </html>
