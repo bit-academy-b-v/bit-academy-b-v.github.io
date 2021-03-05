@@ -20,6 +20,7 @@
         border-radius: 25px;
         background: $color-accent-2;
         font-size: 1rem;
+        flex-shrink: 0;
       }
     }
   }
@@ -28,7 +29,7 @@
 .card {
   background: none;
   border: 1px solid white;
-  
+
   .card-title {
     color: white;
   }
