@@ -1210,4 +1210,8 @@ li {
   z-index: 1200;
 }
 
+.font-smaller {
+  font-size: 12px;
+}
+
 /*# sourceMappingURL=main.css.map */
