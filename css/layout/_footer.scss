@@ -1,5 +1,5 @@
 .footer {
-    padding: 4.6875rem 0;
+    padding: 4.6875rem 0 2rem;
     background-color: rgba($color-white, .2);
 
     &__inner {
@@ -38,6 +38,14 @@
                     margin-left: 4.375rem;
                 }
             }
+        }
+    }
+
+    &__voorwaarden {
+        text-align: center;
+
+        a {
+            color: white;
         }
     }
 }

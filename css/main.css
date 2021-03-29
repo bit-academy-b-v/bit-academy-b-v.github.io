@@ -656,10 +656,6 @@ li {
   flex-shrink: 0;
 }
 
-.subtext {
-  color: gray;
-}
-
 .card {
   background: none;
   border: 1px solid white;
@@ -1142,7 +1138,7 @@ li {
 }
 
 .footer {
-  padding: 4.6875rem 0;
+  padding: 4.6875rem 0 2rem;
   background-color: rgba(255, 255, 255, 0.2);
 }
 @media screen and (min-width: 768px) {
@@ -1185,6 +1181,12 @@ li {
     margin-left: 4.375rem;
   }
 }
+.footer__voorwaarden {
+  text-align: center;
+}
+.footer__voorwaarden a {
+  color: white;
+}
 
 .u-hyphens {
   hyphens: auto;
@@ -1211,7 +1213,7 @@ li {
 }
 
 .font-smaller {
-  font-size: 12px;
+  font-size: 80%;
 }
 
 /*# sourceMappingURL=main.css.map */
