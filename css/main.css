@@ -1183,9 +1183,13 @@ li {
 }
 .footer__voorwaarden {
   text-align: center;
+  font-size: 10px;
 }
 .footer__voorwaarden a {
   color: white;
+}
+.footer__voorwaarden a:hover {
+  text-decoration: underline;
 }
 
 .u-hyphens {
