@@ -129,6 +129,18 @@
                     font-size: 1.125rem;
                 }
 
+                a {
+                    white-space: nowrap;
+
+                    &.highlight {
+                        color: yellow;
+
+                        &:hover {
+                            color: $color-accent-1;
+                        }
+                    }
+                }
+
                 span {
                     cursor: pointer;
                     transition: all .25s;

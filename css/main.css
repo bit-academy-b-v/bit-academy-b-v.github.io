@@ -1021,6 +1021,15 @@ li {
     font-size: 1.125rem;
   }
 }
+.header__nav > ul > li a {
+  white-space: nowrap;
+}
+.header__nav > ul > li a.highlight {
+  color: yellow;
+}
+.header__nav > ul > li a.highlight:hover {
+  color: #33c1d3;
+}
 .header__nav > ul > li span {
   cursor: pointer;
   transition: all 0.25s;
