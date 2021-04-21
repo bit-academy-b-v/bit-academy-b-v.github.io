@@ -1229,4 +1229,22 @@ li {
   font-size: 80%;
 }
 
+.counted .item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.counted .item span {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  background: #EE5965;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
