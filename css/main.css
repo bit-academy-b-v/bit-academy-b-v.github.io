@@ -280,6 +280,9 @@ li {
 .btn.green {
   background: #57BE8E;
 }
+.btn.red {
+  background: #EE5965;
+}
 .btn:hover {
   opacity: 0.9;
 }

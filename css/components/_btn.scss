@@ -29,6 +29,10 @@
     background: $color-accent-5;
   }
 
+  &.red {
+    background: $color-accent-2;
+  }
+
   &:hover {
     opacity: 0.9;
   }
