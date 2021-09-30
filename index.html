@@ -69,6 +69,23 @@
     </script>
     <!-- End Facebook Pixel Code -->
 
+    <!-- Event snippet for Aanmelding conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-441474792/M2tLCIjV_5ECEOi9wdIB',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
     <meta property="og:title" content="Want to become a programmer?"/>
     <meta property="og:description"
           content="Binnen 3 jaar een volwaardig MBO diploma, werken met de nieuwste tech en zelf je studie richting kiezen. Je kiest er voor om Embedded Engineer te worden, Game Developer of Software Developer. Leren door zelf actief bezig te zijn, individueel opdrachten te doen of samen te werken in teams."/>
@@ -175,7 +192,7 @@
                 </div>
                 <div class="card-footer">
                     <a href="https://www.rocva.nl/MBO-onderwijs/Sectoren/ICT/Software-Developer-op-de-Bit-Academy"
-                       target="_blank" rel="nofollow"
+                       target="_blank" rel="nofollow" onclick="gtag_report_conversion();"
                        class="btn w-md-100 mb-3"><span>Meld je aan!</span></a>
                 </div>
             </div>
@@ -188,7 +205,7 @@
                 </div>
                 <div class="card-footer">
                     <a href="https://www.horizoncollege.nl/opleidingen/software-developer-bit-academy/"
-                       target="_blank" rel="nofollow"
+                       target="_blank" rel="nofollow" onclick="gtag_report_conversion();"
                        class="btn w-md-100 mb-3"><span>Meld je aan!</span></a>
                 </div>
             </div>
@@ -200,7 +217,7 @@
                 </div>
                 <div class="card-footer">
                     <a href="https://www.noorderpoort.nl/mbo-opleidingen/kunst-en-creatie/software-developer-bit-academy-25604"
-                       target="_blank" rel="nofollow"
+                       target="_blank" rel="nofollow" onclick="gtag_report_conversion();"
                        class="btn w-md-100 mb-3"><span>Meld je aan!</span></a>
                 </div>
             </div>
