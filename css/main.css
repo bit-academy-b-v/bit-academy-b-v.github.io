@@ -1255,4 +1255,34 @@ li {
   flex-shrink: 0;
 }
 
+html a.winnaar {
+  color: white !important;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  padding-top: 21px;
+  background: #000563;
+  position: relative;
+  transform: scale(0.8);
+}
+@media screen and (min-width: 768px) {
+  html a.winnaar {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    transform: scale(0.5) rotate(15deg);
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html a.winnaar {
+    top: 100px;
+  }
+}
+html a.winnaar:hover {
+  border-color: yellow;
+}
+
 /*# sourceMappingURL=main.css.map */
