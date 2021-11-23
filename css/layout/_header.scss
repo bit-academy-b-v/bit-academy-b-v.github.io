@@ -133,7 +133,11 @@
                     white-space: nowrap;
 
                     &.highlight {
-                        color: yellow;
+                        color: green;
+
+                        @media (min-width: 786px) {
+                            color: yellow;
+                        }
 
                         &:hover {
                             color: $color-accent-1;

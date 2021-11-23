@@ -1028,7 +1028,12 @@ li {
   white-space: nowrap;
 }
 .header__nav > ul > li a.highlight {
-  color: yellow;
+  color: green;
+}
+@media (min-width: 786px) {
+  .header__nav > ul > li a.highlight {
+    color: yellow;
+  }
 }
 .header__nav > ul > li a.highlight:hover {
   color: #33c1d3;
